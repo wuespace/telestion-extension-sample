@@ -1,4 +1,4 @@
-package de.wuespace.telestion.extension.template;
+package de.wuespace.telestion.extension.sample;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import io.vertx.core.AbstractVerticle;
