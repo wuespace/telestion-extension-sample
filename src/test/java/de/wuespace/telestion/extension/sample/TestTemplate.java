@@ -1,4 +1,4 @@
-package de.wuespace.telestion.extension.template;
+package de.wuespace.telestion.extension.sample;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
