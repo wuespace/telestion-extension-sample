@@ -44,12 +44,12 @@ jobs:
           REPLACE_WITH: ${{ github.event.inputs.group }}
           FILE: "build.gradle"
 
-      - name: Update repository in build.gradle
+      - name: Update repository user in build.gradle
         run: |
           sed -i "s/${PLACEHOLDER}/${REPLACE_WITH}/g" "${GITHUB_WORKSPACE}/${FILE}"
         env:
-          PLACEHOLDER: "##REPOSITORY##"
-          REPLACE_WITH: ${{ github.repository }}
+          PLACEHOLDER: "##REPO_USER##"
+          REPLACE_WITH: ${{ env.repo_user }}
           FILE: "build.gradle"
 
       - name: Update repository name in build.gradle
