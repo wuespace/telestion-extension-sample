@@ -20,6 +20,7 @@ jobs:
       - name: Setup environment
         run: |
           echo "repo_name=$(echo "$GITHUB_REPOSITORY" | cut -d "/" -f 2 -)" >> $GITHUB_ENV
+          echo "repo_user=$(echo "$GITHUB_REPOSITORY" | cut -d "/" -f 1 -)" >> $GITHUB_ENV
           echo "lock_file=${GITHUB_WORKSPACE}/.github/initialized" >> $GITHUB_ENV
       
       - name: Check initialization state
